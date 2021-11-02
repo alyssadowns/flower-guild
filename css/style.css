@@ -182,5 +182,6 @@ footer{
   color: #FFFDF8;
   padding: 15pt 0;
   text-align: center;
-  margin-top: 15pt
+  margin-top: 15pt;
+  border-top: 2px solid #FFE08F;
 }
