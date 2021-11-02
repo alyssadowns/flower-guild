@@ -1,7 +1,5 @@
 body{
-  margin: 0;
-  padding: 0;
-  font-size: 10pt;
+  font-size: 11pt;
   font-family: 'Libre Baskerville', serif;
   background-color: #FFFDF8;
   color: #360D00;
@@ -60,6 +58,8 @@ header{
   margin: 0 0 25px 0;
   max-height: 33vh;
   overflow: hidden;
+  background: #360D00;
+  text-align: center;
 }
 
 h1{
@@ -99,57 +99,8 @@ h4 a, p a{
 p {
   font-family: 'Nunito', sans-serif;
   padding: 10px 10%;
-}
-
-.image-block {
-  padding: 10px 3%;
-  max-height: 33vh;
-  overflow: hidden;
-  max-width: 1500px;
-  margin: auto;
-}
-
-.image-block#home{
-  margin-bottom: -85px;
-}
-
-.text-block{
-    background-color: #FFFDF8;
-    text-align: center;
-    border-bottom: 4pt solid #501604;
-    align-self: center;
-    width: 33%;
-    max-width: 200px;
-    position: relative;
-    left: 15%;
-    bottom: 75px;
-    z-index: 0;
-    transition: 0.2s;
-}
-
-.text-block a{
-  color: #360D00;
-}
-
-.text-block:hover{
-  background-color: #ffd25f;
-  transition: 0.2s ease-in-out;
-}
-
-div.text-block a p{
-  font-style: italic;
-}
-
-.twoColumns{
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-gap: 15px;
-}
-
-.clip-circle {
-  max-width: 50%;
-  clip-path: circle(50% at center);
-  margin: 0 5%;
+  max-width:900pt;
+  margin: auto
 }
 
 table{
@@ -184,4 +135,103 @@ footer{
   text-align: center;
   margin-top: 15pt;
   border-top: 2px solid #FFE08F;
+  font-size: 10pt
+}
+
+.image-block {
+  padding: 10px 3%;
+  max-height: 66vh;
+  overflow: hidden;
+  width: 95%;
+  max-width: 800pt;
+  margin: auto;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows:  repeat(3, auto);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  width: 95%;
+  max-width: 1000pt;
+  margin: auto
+}
+
+.text-block{
+    background-color: #FFFDF8;
+    text-align: center;
+    border: 2pt solid #501604;
+    border-bottom: 5pt solid #501604;
+    align-self: center;
+    width: 40%;
+    max-width: 200pt;
+    z-index: 1;
+    transition: 0.2s;
+}
+
+.text-block a{
+  color: #360D00;
+}
+
+.text-block:hover{
+  background-color: #ffd25f;
+  transition: 0.2s ease-in-out;
+}
+
+.text-block a p{
+  font-style: italic;
+}
+
+.div1, .div2, .div3, .div4, .div5, .div6 {
+  grid-column: 1 / -1;
+}
+
+.div1, .div3, .div5 {
+  max-height: 300px;
+  overflow: hidden;
+  margin: 15pt auto;
+}
+
+.div1, .div2 {
+  grid-row: 1 / span 1;
+}
+
+.div3, .div4 {
+  grid-row: 2 / span 1;
+}
+
+.div5, .div6 {
+  grid-row: 3 / span 1;
+}
+
+.div2, .div6{
+  margin-right: auto;
+  margin-left: 10%;
+}
+
+.div4{
+  margin-left: auto;
+  margin-right: 10%;
+}
+
+.twoColumns{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 15px;
+  padding: 15px;
+  width: 100%;
+  max-width: 800pt;
+  margin: auto
+}
+
+.clip-circle {
+  max-width: 50%;
+  clip-path: circle(50% at center);
+  margin: 0 5%;
+}
+
+#Christa, #Joe{
+  text-align: center
 }
