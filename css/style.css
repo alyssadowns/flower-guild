@@ -1,0 +1,186 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 10pt;
+  font-family: 'Libre Baskerville', serif;
+  background-color: #FFFDF8;
+  color: #360D00;
+}
+
+hr {
+  border-top: 1px solid #501604;
+  width: 75%;
+  margin: auto;
+  padding: 10px
+}
+
+header{
+  background: #501604;
+  border-bottom: 2px solid #FFE08F;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.nav_item a{
+  padding: 0 15px;
+  line-height: 1.5;
+  text-decoration: none;
+  color: #FFFDF8;
+}
+
+.page_nav_item a{
+  padding: 0 15px;
+  line-height: 2;
+  color: #360D00;
+}
+
+.nav_item a:hover, a:focus{
+  text-decoration: underline;
+}
+
+.nav_links{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 15pt 0;
+}
+
+#currentLink.nav_item a{
+  color: #FFE08F;
+  text-decoration: underline;
+}
+
+.header-image{
+  width: 100%;
+  border-bottom: 2px solid #FFE08F;
+  margin: 0 0 25px 0;
+  max-height: 33vh;
+  overflow: hidden;
+}
+
+h1{
+  font-size: 24pt;
+  text-align: center;
+  line-height: 1.5;
+  padding: 10px 15%;
+}
+
+h2{
+  font-size: 14pt;
+  text-align: center;
+  padding: 10px 15%;
+  line-height: 1.25;
+  }
+
+h3{
+  font-size: 12pt;
+  text-align: center;
+  padding: 5px;
+  text-transform:uppercase;
+  padding: 10px 15%;
+  line-height: 1.5;
+}
+
+h4{
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 12pt;
+  padding: 10px 10%;
+}
+
+h4 a, p a{
+  color: #360D00
+}
+
+p {
+  font-family: 'Nunito', sans-serif;
+  padding: 10px 10%;
+}
+
+.image-block {
+  padding: 10px 3%;
+  max-height: 33vh;
+  overflow: hidden;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.image-block#home{
+  margin-bottom: -85px;
+}
+
+.text-block{
+    background-color: #FFFDF8;
+    text-align: center;
+    border-bottom: 4pt solid #501604;
+    align-self: center;
+    width: 33%;
+    max-width: 200px;
+    position: relative;
+    left: 15%;
+    bottom: 75px;
+    z-index: 0;
+    transition: 0.2s;
+}
+
+.text-block a{
+  color: #360D00;
+}
+
+.text-block:hover{
+  background-color: #ffd25f;
+  transition: 0.2s ease-in-out;
+}
+
+div.text-block a p{
+  font-style: italic;
+}
+
+.twoColumns{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 15px;
+}
+
+.clip-circle {
+  max-width: 50%;
+  clip-path: circle(50% at center);
+  margin: 0 5%;
+}
+
+table{
+  font-family: 'Nunito', sans-serif;
+  border-collapse: collapse;
+  min-width: 50%;
+  max-width: 90%;
+  margin: auto
+}
+
+td, th {
+  border: 1px solid #501604;
+  padding: 10px;
+  font-size: 12pt;
+}
+
+th {
+  text-align: center;
+  background-color: #501604;
+  color:#FFFDF8;
+  font-weight: 400;
+}
+
+tr {
+  text-align: left;
+}
+
+footer{
+  background-color: #501604;
+  color: #FFFDF8;
+  padding: 15pt 0;
+  text-align: center;
+  margin-top: 15pt
+}
